@@ -101,6 +101,7 @@ void stacker() {
 
   while (true) {
     if (ArduinOLED.isPressed(BTN_ANY)) {
+      tone(BUZZER_PIN, NOTE_G5, 100);
       yPos++;
       numToDelete = 0;
       numToAdd = 0;
@@ -152,6 +153,7 @@ void stacker() {
 
     if (millis() > timer) {
       timer = millis() + delayAmount;
+      tone(BUZZER_PIN, NOTE_G3, 50);
       if(isInc) {
         xPos++;
       } else {
