@@ -58,7 +58,7 @@ class ArduinOLEDClass {
     static boolean justPressed(uint16_t mask);
     static boolean justReleased(uint16_t mask);
     static void edgeDetectionReset();
-    void ArduinOLEDClass::pause(uint16_t mask);
+    static void pause(uint16_t mask);
   private:
     static uint16_t lastButtonReadings; //the previous readings of the buttons
     static uint16_t lastButtonStates; //the previous states of the buttons
