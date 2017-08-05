@@ -1,0 +1,60 @@
+#######################################
+# Syntax Coloring Map ArduinOLED
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ArduinOLED	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+buttons	KEYWORD2
+joyX	KEYWORD2
+joyY	KEYWORD2
+begin	KEYWORD2
+isPressed	KEYWORD2
+justPressed	KEYWORD2
+justReleased	KEYWORD2
+edgeDetectionReset	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+BUZZER_PIN	LITERAL1
+
+CHARS_WIDTH	LITERAL1
+CHARS_HEIGHT	LITERAL1
+
+NUM_BUTTONS	LITERAL1
+
+BTN_A	LITERAL1
+BTN_H	LITERAL1
+BTN_X	LITERAL1
+BTN_B	LITERAL1
+BTN_L	LITERAL1
+BTN_Y	LITERAL1
+BTN_U	LITERAL1
+BTN_R	LITERAL1
+BTN_D	LITERAL1
+BTN_Z	LITERAL1
+
+BTN_JOY_L	LITERAL1
+BTN_JOY_R	LITERAL1
+BTN_JOY_U	LITERAL1
+BTN_JOY_D	LITERAL1
+
+BTN_BOTH_L	LITERAL1
+BTN_BOTH_R	LITERAL1
+BTN_BOTH_U	LITERAL1
+BTN_BOTH_D	LITERAL1
+
+BTN_JOY_DPAD	LITERAL1
+BTN_DPAD	LITERAL1
+BTN_BOTH_DPAD	LITERAL1
+
+BTN_ABXY	LITERAL1
+BTN_ABXYZ	LITERAL1
+BTN_ANY	LITERAL1
