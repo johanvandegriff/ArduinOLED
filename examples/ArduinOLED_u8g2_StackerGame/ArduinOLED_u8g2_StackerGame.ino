@@ -189,6 +189,13 @@ void setupScreen() {
   display.print(F("Press any button"));
 }
 
+void resetScreen() {
+  display.setCursor(0, 2*10+5);
+  display.print(F("Highscore Reset"));
+  display.setCursor(0, 5*10);
+  display.print(F("Press any button"));
+}
+
 void setup() {
   ArduinOLED.begin(); //start the ArduinOLED library, which controls the buttons and joystick
   display.begin(); //start the u8g2 library, which controls the display
@@ -198,11 +205,17 @@ void setup() {
   display.setDrawColor(1);
   display.setFontPosTop();
   display.setFontDirection(0);
-  render(setupScreen); //display the menu
+
+  //hold down the R button to reset the stacker highscore
+  if(ArduinOLED.isPressed(BTN_R)) {
+    EEPROM.write(STACKER_EEPROM_ADDR, 0);
+    render(resetScreen); //display the "highscore reset" message
+    ArduinOLED.pause(BTN_ANY); //wait for any button to be pressed
+  }
   
-  while (ArduinOLED.isPressed(BTN_ANY)); //wait for a button to be pressed
-  while (!ArduinOLED.isPressed(BTN_ANY)); //wait for a button to be pressed
-  while (ArduinOLED.isPressed(BTN_ANY)); //wait for a button to be pressed
+  render(setupScreen); //display the menu
+
+  ArduinOLED.pause(BTN_ANY); //wait for any button to be pressed
 //  display.setFont(u8g2_font_unifont_t_symbols); //set the font to allow unicode later
 }
 
