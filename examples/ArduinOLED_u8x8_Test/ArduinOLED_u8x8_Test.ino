@@ -49,62 +49,64 @@ void setup() {
 //  display.setFont(u8x8_font_chroma48medium8_r); //an alternate font. there are a lot more of these available
   display.clear(); //clear the display
   //output a long string of 8*16 zeroes using inverted text.
-  output(0, 0, "                                                                                                                                ", true );
+  //the F("string") function stores strings in flash memory. More at the bottom of this page:
+  //https://www.arduino.cc/en/Reference/PROGMEM
+  output(0, 0, F("                                                                                                                                "), true );
   delay(1000); //wait for 1 second
   display.clear(); //clear the display
   //display the info text
-  output(0, 0, "ArduinOLED v1.0 ", true );
-  output(2, 0, "Johan.Vandegriff", false);
-  output(3, 0, ".net/ArduinOLED ", false);
-  output(5, 0, "  Test Program  ", true );
+  output(0, 0, F("ArduinOLED v1.0 "), true );
+  output(2, 0, F("Johan.Vandegriff"), false);
+  output(3, 0, F(".net/ArduinOLED "), false);
+  output(5, 0, F("  Test Program  "), true );
   //wait for each button to be pressed, then play a tone
-  output(7, 0, "Press A         ", false);
+  output(7, 0, F("Press A         "), false);
   tone(BUZZER_PIN, NOTE_G3, 100); //BUZZER_PIN is defined as pin 3 in the ArduinOLED library
   ArduinOLED.pause(BTN_A);
   tone(BUZZER_PIN, NOTE_A3, 100);
-  output(7, 6, "B", false);
+  output(7, 6, F("B"), false);
   ArduinOLED.pause(BTN_B);
   tone(BUZZER_PIN, NOTE_B3, 100);
-  output(7, 6, "X", false);
+  output(7, 6, F("X"), false);
   ArduinOLED.pause(BTN_X);
   tone(BUZZER_PIN, NOTE_C4, 100);
-  output(7, 6, "Y", false);
+  output(7, 6, F("Y"), false);
   ArduinOLED.pause(BTN_Y);
   tone(BUZZER_PIN, NOTE_D4, 100);
-  output(7, 6, "H", false);
+  output(7, 6, F("H"), false);
   ArduinOLED.pause(BTN_H);
   tone(BUZZER_PIN, NOTE_E4, 100);
-  output(7, 6, "L", false);
+  output(7, 6, F("L"), false);
   ArduinOLED.pause(BTN_L);
   tone(BUZZER_PIN, NOTE_FS4, 100);
-  output(7, 6, "R", false);
+  output(7, 6, F("R"), false);
   ArduinOLED.pause(BTN_R);
   tone(BUZZER_PIN, NOTE_G4, 100);
-  output(7, 6, "U", false);
+  output(7, 6, F("U"), false);
   ArduinOLED.pause(BTN_U);
   tone(BUZZER_PIN, NOTE_A4, 100);
-  output(7, 6, "D", false);
+  output(7, 6, F("D"), false);
   ArduinOLED.pause(BTN_D);
   tone(BUZZER_PIN, NOTE_B4, 100);
-  output(6, 0, "Press Z (joy-   stick button)", false);
+  output(6, 0, F("Press Z (joy-   stick button)"), false);
   ArduinOLED.pause(BTN_Z);
   tone(BUZZER_PIN, NOTE_C5, 100);
-  output(6, 0, "Move the joy-   stick left   ", false);
+  output(6, 0, F("Move the joy-   stick left   "), false);
   ArduinOLED.pause(BTN_JOY_L);
   tone(BUZZER_PIN, NOTE_D5, 100);
-  output(7, 6, "right", false);
+  output(7, 6, F("right"), false);
   ArduinOLED.pause(BTN_JOY_R);
   tone(BUZZER_PIN, NOTE_E5, 100);
-  output(7, 6, "up   ", false);
+  output(7, 6, F("up   "), false);
   ArduinOLED.pause(BTN_JOY_U);
   tone(BUZZER_PIN, NOTE_FS5, 100);
-  output(7, 6, "down", false);
+  output(7, 6, F("down"), false);
   ArduinOLED.pause(BTN_JOY_D);
   tone(BUZZER_PIN, NOTE_G5, 100);
 
   //after the buttons have all been pressed, show the joystick values
-  output(6, 0, "Joystick X:     ", false );
-  output(7, 0, "Joystick Y:     ", false );
+  output(6, 0, F("Joystick X:     "), false );
+  output(7, 0, F("Joystick Y:     "), false );
 }
 
 
