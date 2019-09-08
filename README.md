@@ -1,2 +1,2 @@
 # ArduinOLED
-Library for the ArduinOLED board. More info at: http://johan.vandegriff.net/ArduinOLED/
+Library for the ArduinOLED board. More info at: https://johanv.xyz/ArduinOLED/
