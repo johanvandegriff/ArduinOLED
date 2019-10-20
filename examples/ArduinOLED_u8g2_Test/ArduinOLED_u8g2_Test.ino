@@ -32,9 +32,9 @@ void setupScreen() {
   display.setCursor(0, 0 * 10);
   display.print(F("ArduinOLED v1.0 "));
   display.setCursor(0, 1 * 10 + 5);
-  display.print(F("Johan.Vandegriff"));
+  display.print(F("  https://johanv"));
   display.setCursor(0, 2 * 10 + 5);
-  display.print(F(".net/ArduinOLED "));
+  display.print(F(".xyz/ArduinOLED "));
   display.setCursor(0, 4 * 10);
   display.print(F("  Test Program  "));
   display.setCursor(0, 5 * 10);

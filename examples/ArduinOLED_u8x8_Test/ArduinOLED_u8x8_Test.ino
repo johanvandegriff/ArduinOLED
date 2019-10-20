@@ -56,8 +56,8 @@ void setup() {
   display.clear(); //clear the display
   //display the info text
   output(0, 0, F("ArduinOLED v1.0 "), true );
-  output(2, 0, F("Johan.Vandegriff"), false);
-  output(3, 0, F(".net/ArduinOLED "), false);
+  output(2, 0, F("  https://johanv"), false);
+  output(3, 0, F(".xyz/ArduinOLED "), false);
   output(5, 0, F("  Test Program  "), true );
   //wait for each button to be pressed, then play a tone
   output(7, 0, F("Press A         "), false);
