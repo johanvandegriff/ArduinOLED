@@ -1,7 +1,7 @@
 /*
  * This sketch is for the ArduinOLED board. for more info, visit:
  * 
- * Johan.Vandegriff.net/ArduinOLED
+ * https://johanv.xyz/ArduinOLED/
  * 
  * It tests all the parts of the board:
  *   Screen

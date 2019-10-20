@@ -1,10 +1,10 @@
 /*
 This is a library for the ArduinOLED board to read the buttons and joystick.
 
-http://johan.vandegriff.net/ArduinOLED/
+https://johanv.xyz/ArduinOLED/
 
 Written by Johan Vandegriff
-BSD license, check license.txt for more information
+MIT license, check license.txt for more information
 */
 
 #include "Arduino.h"
